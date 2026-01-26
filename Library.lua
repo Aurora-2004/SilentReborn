@@ -1,5 +1,4 @@
 
-
 if game:GetService("CoreGui"):FindFirstChild("UI") then
     local destroy = Instance.new("BoolValue")
     destroy.Name = "DestroyUi"
@@ -334,7 +333,7 @@ function library.CreateWindow(self, uiTitle)
       TabIcon.Size = udim2_new(0, 24, 0, 24)
       TabIcon.ImageColor3 = color3_rgb(200, 200, 200)
       TabIcon.ZIndex = 900
-      TabIcon.Image = tabOptions.IconURL string.format("http://www.roblox.com/asset/?id%s", tabOptions.Icon)
+      TabIcon.Image = string.format("http://www.roblox.com/asset/?id=%s", tostring(tabOptions.Icon))
     end
     
     Tab.Name = "Tab"
