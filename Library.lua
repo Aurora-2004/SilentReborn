@@ -1,4 +1,5 @@
 
+
 if game:GetService("CoreGui"):FindFirstChild("UI") then
     local destroy = Instance.new("BoolValue")
     destroy.Name = "DestroyUi"
@@ -39,16 +40,6 @@ function library.SwitchTab(self, new)
   end
   library.currentTab = new
 end
-
-function ToggleUILib()
-    if not ToggleUI then
-        game:GetService("CoreGui"):FindFirstChild("UI").Enabled = false;
-        ToggleUI = true;
-    else
-        ToggleUI = false;
-        game:GetService("CoreGui"):FindFirstChild("UI").Enabled = true;
-    end;
-end;
 
 function library.Drag(self, objDrag, objHold)
   if not objHold then objHold = objDrag end
@@ -328,11 +319,11 @@ function library.CreateWindow(self, uiTitle)
     TabBtn.Size = udim2_new(0, 118, 0, 32)
     TabBtn.ZIndex = 900
     TabBtn.Font = Enum.Font.GothamMedium
-    TabBtn.Text = (tabOptions.IconURL ~= nil and "        " .. tabOptions.Name or " " .. tabOptions.Name)
+    TabBtn.Text = (tabOptions.Icon ~= nil and "        " .. tabOptions.Name or " " .. tabOptions.Name)
     TabBtn.TextColor3 = color3_rgb(200, 200, 200)
     TabBtn.TextSize = 15.000
     TabBtn.TextXAlignment = Enum.TextXAlignment.Left
-    if tabOptions.IconURL then
+    if tabOptions.Icon then
       TabIcon = instance_new("ImageLabel")
       TabIcon.Name = "TabIcon"
       TabIcon.Parent = TabBtn
@@ -343,7 +334,7 @@ function library.CreateWindow(self, uiTitle)
       TabIcon.Size = udim2_new(0, 24, 0, 24)
       TabIcon.ImageColor3 = color3_rgb(200, 200, 200)
       TabIcon.ZIndex = 900
-      TabIcon.Image = tabOptions.IconURL
+      TabIcon.Image = tabOptions.IconURL string.format("http://www.roblox.com/asset/?id%s", tabOptions.Icon)
     end
     
     Tab.Name = "Tab"
