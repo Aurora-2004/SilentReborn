@@ -11,7 +11,7 @@ return {
 
         Name     = "Game",
         Icon     = "6034227061",
-        Sections = {},
+        Sections = {"Lighting"},
 
     },
 
@@ -25,7 +25,7 @@ return {
 
         Name     = "Auto Buy",
         Icon     = "6031265983",
-        Sections = {},
+        Sections = {"Stores"},
 
     },
 
@@ -33,7 +33,7 @@ return {
 
         Name     = "Wood",
         Icon     = "6034503369",
-        Sections = {},
+        Sections = {"Trees"},
 
     },
 
