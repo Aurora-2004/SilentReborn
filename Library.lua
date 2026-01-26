@@ -1101,8 +1101,8 @@ function library.CreateWindow(self, uiTitle)
       return dropdownFunctions
     end
 
-    function tab.Label(self, labelOptions)
-      assert(labelOptions.Name, "Missing argument 'Name' from labelOptions")
+    function tab.Label(self, Name)
+      assert(Name, "Missing argument 'Name' from labelOptions")
       local Label = instance_new("TextLabel")
       Label.Name = "Label"
       Label.Parent = Tab
@@ -1115,7 +1115,7 @@ function library.CreateWindow(self, uiTitle)
       Label.TextColor3 = color3_rgb(235, 235, 235)
       Label.TextSize = 16.000
       Label.TextXAlignment = Enum.TextXAlignment.Left
-      Label.Text = " " .. labelOptions.Name
+      Label.Text = " " ..Name
     end
     return tab
   end
