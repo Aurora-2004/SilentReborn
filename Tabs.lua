@@ -18,7 +18,7 @@ return {
     {
         Name     = "Property",
         Icon     = "6034687957",
-        Sections = {},
+        Sections = {"Slot", "Property"},
     },
 
     {
