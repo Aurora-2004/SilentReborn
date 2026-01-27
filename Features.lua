@@ -51,7 +51,7 @@ Features.Movement = {
         
         end,
 
-    }
+    },
 
     {
 
@@ -166,7 +166,7 @@ Features.Stores = {
 
     {
 
-        Type     = "Button"
+        Type     = "Button",
         Name     = "Purchase Selected Item",
         Callback = function()
         
@@ -176,7 +176,7 @@ Features.Stores = {
 
     {
 
-        Type     = "Button"
+        Type     = "Button",
         Name     = "Abort Purchasing",
         Callback = function()
         
@@ -214,7 +214,7 @@ Features.Trees = {
 
     {
 
-        Type     = "Button"
+        Type     = "Button",
         Name     = "Bring Selected Tree",
         Callback = function()
         
@@ -224,7 +224,7 @@ Features.Trees = {
 
     {
 
-        Type     = "Button"
+        Type     = "Button",
         Name     = "Abort Chopping",
         Callback = function()
         
