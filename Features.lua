@@ -33,9 +33,9 @@ Features.Movement = {
 
         Type     = "Slider",
         Name     = "Fly Speed",
-        Default  = 50,
+        Default  = 16,
         Min      = 50,
-        Max      = 300,
+        Max      = 500,
         Callback = function(Value)
         
         end,
@@ -138,13 +138,95 @@ Features.Lighting = {
 
 }
 
+Feature.Slot = {
+
+    {
+
+        Type     = "Slider",
+        Name     = "Slot",
+        Default  = 1,
+        Min      = 1,
+        Max      = 6,
+        Callback = function(Value)
+        
+        end,
+
+    },
+
+    {
+
+        Type     = "Button",
+        Name     = "Load Selected Slot",
+        Callback = function()
+        
+        end,
+
+    },
+
+    {
+
+        Type     = "Button",
+        Name     = "Save Current Slot",
+        Callback = function()
+        
+        end,
+
+    },
+
+}
+
+Feature.Property = {
+
+    {
+
+        Type     = "Button",
+        Name     = "Free Land",
+        Callback = function()
+        
+        end,
+
+    },
+
+    {
+
+        Type     = "Button",
+        Name     = "Max Land",
+        Callback = function()
+        
+        end,
+
+    },
+
+    {
+
+        Type     = "Button",
+        Name     = "Sell Property Sold Sign",
+        Callback = function()
+        
+        end,
+
+    },
+
+    {
+
+        Type     = "Toggle",
+        Name     = "Land Art",
+        State    = false,
+        Callback = function(State)
+            
+        end,
+
+    }
+
+}
+
 Features.Stores = {
 
     {
 
         Type     = "Slider",
         Name     = "Amount",
-        Default  = 30,
+        Default  = 1,
         Min      = 1,
         Max      = 100,
         Callback = function(Value)
@@ -192,9 +274,9 @@ Features.Trees = {
 
         Type     = "Slider",
         Name     = "Amount",
-        Default  = 30,
+        Default  = 1,
         Min      = 1,
-        Max      = 100,
+        Max      = 30,
         Callback = function(Value)
         
         end,
