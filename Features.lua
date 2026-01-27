@@ -138,7 +138,7 @@ Features.Lighting = {
 
 }
 
-Feature.Slot = {
+Features.Slot = {
 
     {
 
@@ -175,7 +175,7 @@ Feature.Slot = {
 
 }
 
-Feature.Property = {
+Features.Property = {
 
     {
 
