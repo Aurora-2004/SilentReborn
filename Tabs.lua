@@ -4,7 +4,7 @@ return {
     {
         Name     = "Player",
         Icon     = "5012544693",
-        Sections = {},
+        Sections = {"Movement"},
     },
 
     {
